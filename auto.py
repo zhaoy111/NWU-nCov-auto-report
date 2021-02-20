@@ -14,8 +14,8 @@ import argparse
 auth_mode = "PASSWORD"  #1:PASSWORD 2:COOKIES
 
 #统一身份认证账号密码，仅在“PASSWORD”认证模式下需要
-stu_id = ""
-stu_passwd = ""
+stu_id = "202032558"
+stu_passwd = "changchao521"
 
 #app.nwu.edu.cn认证Cookies，仅在“COOKIES”认证模式下需要
 #可以通过浏览器直接获取
@@ -47,11 +47,11 @@ custom_params = [
 params = {
         "sfzx":"1", #是否在校
         "tw":"1",   #体温（list）(0-"Below 36";1-"36-36.5";2-"36.5-36.9";3-"36.9-37.3"; ... , i<=8)
-        "area":"陕西省 西安市 长安区",
-        "city":"西安市",
-        "province":"陕西省",
-        "address":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区",
-        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","position":{"Q":34.14218,"R":108.87518999999998,"lng":108.87519,"lat":34.14218},"message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"029","adcode":"610116","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"文苑南路","streetNumber":"11号","country":"中国","province":"陕西省","city":"西安市","district":"长安区","township":"郭杜街道"},"formattedAddress":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
+        "area":"河南省 南阳市 唐河县",
+        "city":"南阳市",
+        "province":"河南省",
+        "address":"河南省南阳市唐河县滨河街道龙山大道",
+        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"0377","adcode":"411328","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"福州路","streetNumber":"79号","country":"中国","province":"河南省","city":"南阳市","district":"唐河县","township":"滨河街道"},"formattedAddress":"河南省南阳市唐河县滨河街道龙山大道","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
         "sfcyglq":"0",  #是否隔离期
         "sfyzz":"0",    #是否有症状
         "qtqk":"",  #其他情况
@@ -219,11 +219,11 @@ def sent_report(cookies):
     params = {
         "sfzx":"1", #是否在校
         "tw":"1",   #体温（list）(0-"Below 36";1-"36-36.5";2-"36.5-36.9";3-"36.9-37.3"; ... , i<=8)
-        "area":"陕西省 西安市 长安区",
-        "city":"西安市",
-        "province":"陕西省",
-        "address":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区",
-        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","position":{"Q":34.14218,"R":108.87518999999998,"lng":108.87519,"lat":34.14218},"message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"029","adcode":"610116","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"文苑南路","streetNumber":"11号","country":"中国","province":"陕西省","city":"西安市","district":"长安区","township":"郭杜街道"},"formattedAddress":"陕西省西安市长安区郭杜街道西北大学南校区学生公寓10号楼西北大学长安校区","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
+        "area":"河南省 南阳市 唐河县",
+        "city":"南阳市",
+        "province":"河南省",
+        "address":"河南省南阳市唐河县滨河街道龙山大道",
+        "geo_api_info":'{"type":"complete","info":"SUCCESS","status":1,"$Da":"jsonp_687452_","message":"Get ipLocation success.Get address success.","location_type":"ip","accuracy":null,"isConverted":true,"addressComponent":{"citycode":"0377","adcode":"411328","businessAreas":[],"neighborhoodType":"","neighborhood":"","building":"","buildingType":"","street":"福州路","streetNumber":"79号","country":"中国","province":"河南省","city":"南阳市","district":"唐河县","township":"滨河街道"},"formattedAddress":"河南省南阳市唐河县滨河街道龙山大道","roads":[],"crosses":[],"pois":[]}',   #高德SDK返回值
         "sfcyglq":"0",  #是否隔离期
         "sfyzz":"0",    #是否有症状
         "qtqk":"",  #其他情况
